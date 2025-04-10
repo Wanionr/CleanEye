@@ -6,6 +6,4 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    imagedetector = ImageDetector()
-    imagedetector.DetectImagesd()
     return {"message": "NSFW Image Filter Server is running!"}
