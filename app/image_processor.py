@@ -8,9 +8,11 @@ class ImageProcessor:
         self.__censor = ImageCensor()
     
     def ImageProcess(self, images: list[str]):
+        resultlist = []
 
         for image in images:
-            resultlist = list[DetectResult]
+            result = self.__detector.DetectImages(image)
+            resultlist.append(result)
 
-            resultlist = self.__detector(image)
-            
+        for r in resultlist:
+            self.__censor.apply(r)

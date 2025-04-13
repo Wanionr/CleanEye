@@ -1,4 +1,8 @@
-#image_detector
+#from app.detect_result import DetectResult
+
 class ImageCensor:
-    def __init__(self):
-        self.__a = "Hello"
+    def apply(self, image):
+        for l in image:
+            print(l.url)
+            print(l.label)
+            print(l.box)
