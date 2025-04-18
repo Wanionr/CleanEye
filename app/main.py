@@ -1,11 +1,9 @@
-#app/main.py
 from fastapi import FastAPI
-from app.image_processor import ImageProcessor
+from fastapi.staticfiles import StaticFiles
+from app.image_router import router
 
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    processor = ImageProcessor()
-    processor.ImageProcess(["https://ultralytics.com/images/bus.jpg"])
-    return {"message": "NSFW Image Filter Server is running!"}
+app.mount("/static", StaticFiles(directory="/app/app/static"), name="static")
+
+app.include_router(router)
