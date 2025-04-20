@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
-from app.image_processor import ImageProcessor
+from image_processor import ImageProcessor
 
 router = APIRouter()
 processor = ImageProcessor()

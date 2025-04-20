@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 from numpy import ndarray
-from app.detect_result import DetectResultBox
+from detect_result import DetectResultBox
 
 #이미지를 감지할 YOLO 모델이 정의된 클래스스
 class ImageDetector:

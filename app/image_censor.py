@@ -1,6 +1,6 @@
 import numpy as np
 import cv2 as cv
-from app.detect_result import DetectResultBox
+from detect_result import DetectResultBox
 
 class ImageCensor:
     def CensoringImage(self, img: np.ndarray, boxes: list[DetectResultBox]):

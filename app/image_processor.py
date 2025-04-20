@@ -1,12 +1,12 @@
 import numpy as np
 import cv2 as cv
 import requests
-from app.image_detector import ImageDetector
-from app.image_censor import ImageCensor
+from image_detector import ImageDetector
+from image_censor import ImageCensor
 import os
 from urllib.parse import urljoin, urlparse
 
-IMAGE_SAVE_DIR = "/app/app/static/censored_images"
+IMAGE_SAVE_DIR = "/app/static/censored_images"
 SERVER_BASE_URL = "http://localhost:8000"
 
 class ImageProcessor:
