@@ -26,8 +26,6 @@ class ImageProcessor:
         filename = f"censored_{filename_base}.png"
         filepath = os.path.join(IMAGE_SAVE_DIR, filename)
 
-        print(f"FilePath: {filepath}")
-
         # 이미지 파일로 저장
         cv.imwrite(filepath, censored_img)
         # 접근 가능한 URL 생성
