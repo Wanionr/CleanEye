@@ -1,0 +1,10 @@
+POST http://localhost:8000/detect
+Content-Type: application/json
+
+{
+  "image_urls": [
+    "https://mediahub.seoul.go.kr/wp-content/uploads/2016/02/1fc0e0b60000d9e57dee2e8cd97e6414.jpg",
+    "https://www.gangnam.go.kr/upload/editor/2019/12/16/562d196a-5f42-4575-9373-3b8946019dc4.jpg"
+  ],
+  "confidence": 0.5
+}
