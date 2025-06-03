@@ -1,10 +1,9 @@
-POST http://localhost:8000/detect
+POST http://ec2-15-164-134-227.ap-northeast-2.compute.amazonaws.com:8000/detect
 Content-Type: application/json
 
 {
-  "image_urls": [
-    "https://mediahub.seoul.go.kr/wp-content/uploads/2016/02/1fc0e0b60000d9e57dee2e8cd97e6414.jpg",
-    "https://www.gangnam.go.kr/upload/editor/2019/12/16/562d196a-5f42-4575-9373-3b8946019dc4.jpg"
-  ],
-  "confidence": 0.5
+  "urls": ["https://t4.ftcdn.net/jpg/08/31/05/23/360_F_831052326_NkjqmsokAXYHWlIekbiPP5b55jHmjy6b.jpg"],
+  "rate": 100,
+  "requestUrl": "aaa",
+  "type": 2
 }
