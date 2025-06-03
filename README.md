@@ -1,1 +1,1 @@
-# CleanEye
+# CleanEye - Image detect and censor
